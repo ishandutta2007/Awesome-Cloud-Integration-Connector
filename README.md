@@ -57,7 +57,7 @@ The following hosted and managed enterprise integration platforms are sorted des
 
 ## 🔓 Open-Source Solutions
 
-Self-hostable, open-source integration engines, ELT platforms, and workflow orchestrators with community-backed cloud and CRM connectors. Sorted descending by GitHub Stars_Count:
+Self-hostable, open-source integration engines, ELT platforms, and workflow orchestrators with community-backed cloud and CRM connectors. Sorted descending by GitHub_Stars_Count:
 
 | 📦 Project | 🌟 Github_Stars | 🎯 Focus & Capabilities | 🔌 Key Connectors |
 | :--- | :--- | :--- | :--- |
