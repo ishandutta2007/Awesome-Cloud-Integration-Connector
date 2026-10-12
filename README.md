@@ -59,7 +59,7 @@ The following hosted and managed enterprise integration platforms are sorted des
 
 Self-hostable, open-source integration engines, ELT platforms, and workflow orchestrators with community-backed cloud and CRM connectors. Sorted descending by GitHub Stars_Count:
 
-| 📦 Project | 🌟 Stars | 🎯 Focus & Capabilities | 🔌 Key Connectors |
+| 📦 Project | 🌟 Github_Stars | 🎯 Focus & Capabilities | 🔌 Key Connectors |
 | :--- | :--- | :--- | :--- |
 | **[n8n](https://github.com/n8n-io/n8n)** | [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) | Fair-code workflow automation and AI-agent orchestration platform combining visual node-based design with custom JavaScript/Python code. | AWS (S3, SES, Lambda, SQS), Salesforce, Google Cloud, Postgres, Slack, 400+ nodes |
 | **[Apache Airflow](https://github.com/apache/airflow)** | [![GitHub_Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers) | Industry-standard DAG-based workflow automation and orchestration framework written in Python. | `apache-airflow-providers-salesforce`, `apache-airflow-providers-amazon`, `google`, `microsoft-azure` |
