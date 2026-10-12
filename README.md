@@ -1,34 +1,47 @@
-# Awesome Cloud Integration Connectors & iPaaS 🌟
+<div align="center">
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Cloud-Integration-Connector/pulls)
+<img src="./assets/banner.svg" alt="Awesome Cloud Integration Connectors Banner" width="100%" />
 
-A curated list of awesome **Cloud Integration Connectors**, **iPaaS (Integration Platform as a Service)**, **data movement pipelines**, and **workflow automation platforms**. This collection features enterprise SaaS solutions alongside production-ready open-source alternatives for orchestrating connections between cloud providers (AWS, Azure, Google Cloud), CRMs (Salesforce), ERPs, and modern data warehouses.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Integration-Connector/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <b>🌐 An authoritative directory of enterprise iPaaS solutions, cloud sync pipelines, and open-source data movement connectors. ⚡</b>
+</p>
+
+</div>
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Market Overview](#market-overview)
-- [SaaS & Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source Solutions](#open-source-solutions)
-- [Comparison: SaaS vs Open-Source](#comparison-saas-vs-open-source)
-- [Contributing](#contributing)
+- [📊 Market Overview](#-market-overview)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [🔓 Open-Source Solutions](#-open-source-solutions)
+- [⚖️ Comparison: SaaS vs Open-Source](#️-comparison-saas-vs-open-source)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 Contributing](#-contributing)
 
 ---
 
-## Market Overview
+## 📊 Market Overview
 
 The global Integration Platform as a Service (iPaaS) market is estimated at **$15.6B in 2025 and projected to surpass $19.1B by 2026** (CAGR ~30%). The sector is **moderately fragmented**: while hyperscalers and legacy enterprise suites (Microsoft, Salesforce MuleSoft, AWS, Boomi) anchor significant enterprise market share, intense competition from modern challenger platforms and open-source ecosystems prevents total winner-take-all concentration.
 
 ---
 
-## SaaS & Hosted Platforms
+## 🏢 SaaS & Hosted Platforms
 
 The following hosted and managed enterprise integration platforms are sorted descending by company scale (market capitalization or private valuation):
 
-| Platform / Connector | Provider / Valuation | Starting Tier Price | Free Tier / Trial Limits | Key Cloud & App Connectors |
+| 🏷️ Platform / Connector | 🏛️ Provider / Valuation | 💳 Starting Tier Price | 🎁 Free Tier / Trial Limits | 🔌 Key Cloud & App Connectors |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Azure Data Factory](https://azure.microsoft.com/products/data-factory/)** | Microsoft (~$3.1T Market Cap) | **$1.00** per 1,000 orchestration runs + **$0.25** / DIU-hour for data movement | Azure Free Account gives **$200 credit** (30-day limit) + free monthly quota of **1,000 activity runs** and **5,000 read/write operations** | Salesforce, AWS S3, Google Cloud Storage, SAP, Dynamics 365, Snowflake |
 | **[Google Cloud Data Fusion](https://cloud.google.com/data-fusion)** | Alphabet / Google (~$2.1T Market Cap) | **$1.80** per instance-hour (Basic instance for pipeline design) + Dataproc compute execution charges | Google Cloud Free Tier provides **120 instance-hours free per month** per billing account (Basic instance) | Salesforce Plugin, BigQuery, AWS S3, Kafka, SAP, Cloud SQL |
@@ -42,11 +55,11 @@ The following hosted and managed enterprise integration platforms are sorted des
 
 ---
 
-## Open-Source Solutions
+## 🔓 Open-Source Solutions
 
 Self-hostable, open-source integration engines, ELT platforms, and workflow orchestrators with community-backed cloud and CRM connectors. Sorted descending by GitHub star count:
 
-| Project | Stars | Focus & Capabilities | Key Connectors |
+| 📦 Project | 🌟 Stars | 🎯 Focus & Capabilities | 🔌 Key Connectors |
 | :--- | :--- | :--- | :--- |
 | **[n8n](https://github.com/n8n-io/n8n)** | [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) | Fair-code workflow automation and AI-agent orchestration platform combining visual node-based design with custom JavaScript/Python code. | AWS (S3, SES, Lambda, SQS), Salesforce, Google Cloud, Postgres, Slack, 400+ nodes |
 | **[Apache Airflow](https://github.com/apache/airflow)** | [![GitHub stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers) | Industry-standard DAG-based workflow automation and orchestration framework written in Python. | `apache-airflow-providers-salesforce`, `apache-airflow-providers-amazon`, `google`, `microsoft-azure` |
@@ -64,20 +77,41 @@ Self-hostable, open-source integration engines, ELT platforms, and workflow orch
 
 ---
 
-## Comparison: SaaS vs Open-Source
+## ⚖️ Comparison: SaaS vs Open-Source
 
-| Capability | Hosted SaaS / iPaaS | Open-Source Alternatives |
+| 🔍 Dimension | 🏢 Hosted SaaS / iPaaS | 🔓 Open-Source Alternatives |
 | :--- | :--- | :--- |
-| **Maintenance** | Fully managed, auto-scaled, SLA-backed infrastructure | Requires self-hosting (Docker, Kubernetes, VM) & ops monitoring |
-| **Security & Compliance** | Turnkey SOC2, HIPAA, ISO27001, FedRAMP certifications | Full data residency & air-gapped deployment control within your VPC |
-| **Pricing Model** | Predictable subscription fees or consumption-based (MAR, DIU, API calls) | Free software license; compute, storage, and maintenance overhead only |
-| **Extensibility** | Vendor app marketplace & low-code connectors | Source code access, custom connector SDKs, git-native CI/CD |
+| **🛠️ Maintenance** | Fully managed, auto-scaled, SLA-backed infrastructure | Requires self-hosting (Docker, Kubernetes, VM) & ops monitoring |
+| **🛡️ Security & Compliance** | Turnkey SOC2, HIPAA, ISO27001, FedRAMP certifications | Full data residency & air-gapped deployment control within your VPC |
+| **💰 Pricing Model** | Predictable subscription fees or consumption-based (MAR, DIU, API calls) | Free software license; compute, storage, and maintenance overhead only |
+| **⚙️ Extensibility** | Vendor app marketplace & low-code connectors | Source code access, custom connector SDKs, git-native CI/CD |
 
 ---
 
-## Contributing
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Integration-Connector&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Integration-Connector&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using **Awesome Cloud Integration Connector**! 🚀
+
+If you found this curated list helpful for evaluating iPaaS platforms, integrating cloud providers, or setting up open-source ETL pipelines:
+
+- ⭐ **Star this repository** on GitHub to help others discover it.
+- 🍴 **Fork the repo** and contribute your favorite connectors, recipes, and benchmarks.
+- 📢 **Share with fellow data engineers & architects** on social media and dev communities.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing updates and maintenance, consider sponsoring via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support is deeply appreciated! ✨
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome! Please read the guidelines below before submitting a pull request:
-1. Verify that open-source projects have an active GitHub repository and public license.
-2. For SaaS additions, provide concrete starting tier pricing, free tier/trial boundaries, and company valuation data.
-3. Keep entries formatted with clear markdown tables and alphabetical or metric-based sorting.
+1. 💡 Verify that open-source projects have an active GitHub repository and public license.
+2. 🏷️ For SaaS additions, provide concrete starting tier pricing, free tier/trial boundaries, and company valuation data.
+3. 📝 Keep entries formatted with clear markdown tables and alphabetical or metric-based sorting.

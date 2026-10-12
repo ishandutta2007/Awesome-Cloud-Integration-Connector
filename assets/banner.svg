@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <!-- Glowing Lines & Elements -->
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f00ff" />
+      <stop offset="100%" stop-color="#e100ff" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+    .badge-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    .pulse-node {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dash 20s linear infinite;
+    }
+    .floating-card-1 {
+      animation: float 5s ease-in-out infinite alternate;
+    }
+    .floating-card-2 {
+      animation: float 6s ease-in-out infinite 1s alternate-reverse;
+    }
+    .floating-card-3 {
+      animation: float 5.5s ease-in-out infinite 0.5s alternate;
+    }
+    .signal-dot {
+      animation: travel 4s linear infinite;
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -200;
+      }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.35; transform: scale(0.98); }
+      100% { opacity: 0.85; transform: scale(1.02); }
+    }
+    @keyframes travel {
+      0% { offset-distance: 0%; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Background Mesh / Grid Lines -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Dynamic Animated Cloud Ambient Glows in Background -->
+  <circle cx="1000" cy="90" r="140" fill="#00f2fe" opacity="0.18" filter="url(#glow)" class="pulse-node" />
+  <circle cx="150" cy="270" r="120" fill="#7f00ff" opacity="0.15" filter="url(#glow)" class="pulse-node" />
+
+  <!-- Dynamic Connector / Flow Lines (Background) -->
+  <g stroke-width="2.5" fill="none">
+    <path d="M 680 70 C 820 40, 960 140, 1120 100" stroke="url(#cyanBlue)" class="flow-line" opacity="0.6" />
+    <path d="M 650 280 C 780 320, 920 230, 1140 270" stroke="url(#purplePink)" class="flow-line" opacity="0.5" />
+    <path d="M 720 170 C 860 190, 980 150, 1150 190" stroke="#38bdf8" stroke-dasharray="4 4" opacity="0.4" />
+  </g>
+
+  <!-- Interactive Dynamic Floating Cards (Positioned in Right Hemisphere, Behind Foreground Center) -->
+  <!-- Card 1: AWS -->
+  <g class="floating-card-1">
+    <rect x="740" y="45" width="160" height="48" rx="24" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1.5" filter="url(#subtleGlow)" />
+    <circle cx="765" cy="69" r="12" fill="#ff9900" opacity="0.9" />
+    <text x="765" y="73" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">AWS</text>
+    <text x="790" y="74" class="badge-label">Cloud Sync</text>
+    <circle cx="875" cy="69" r="4" fill="#00f2fe" />
+  </g>
+
+  <!-- Card 2: Salesforce -->
+  <g class="floating-card-2">
+    <rect x="940" y="90" width="175" height="48" rx="24" fill="url(#cardGrad1)" stroke="#00a1e0" stroke-width="1.5" filter="url(#subtleGlow)" />
+    <circle cx="965" cy="114" r="12" fill="#00a1e0" opacity="0.9" />
+    <text x="965" y="118" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">SFDC</text>
+    <text x="990" y="119" class="badge-label">Salesforce API</text>
+    <circle cx="1090" cy="114" r="4" fill="#10b981" />
+  </g>
+
+  <!-- Card 3: iPaaS Engine -->
+  <g class="floating-card-3">
+    <rect x="800" y="240" width="180" height="48" rx="24" fill="url(#cardGrad1)" stroke="#a855f7" stroke-width="1.5" filter="url(#subtleGlow)" />
+    <circle cx="825" cy="264" r="12" fill="#a855f7" opacity="0.9" />
+    <text x="825" y="268" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">ETL</text>
+    <text x="850" y="269" class="badge-label">Airbyte &amp; n8n</text>
+    <circle cx="955" cy="264" r="4" fill="#f43f5e" />
+  </g>
+
+  <!-- Card 4: Multi-Cloud -->
+  <g class="floating-card-1">
+    <rect x="990" y="215" width="165" height="48" rx="24" fill="url(#cardGrad1)" stroke="#3b82f6" stroke-width="1.5" filter="url(#subtleGlow)" />
+    <circle cx="1015" cy="239" r="12" fill="#2563eb" opacity="0.9" />
+    <text x="1015" y="243" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">GCP</text>
+    <text x="1038" y="244" class="badge-label">Azure / BigQ</text>
+    <circle cx="1130" cy="239" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- FOREGROUND BRANDING (Protected Layer: Remains in front and perfectly readable) -->
+  <g transform="translate(60, 0)">
+    <!-- Pill Category Label -->
+    <rect x="0" y="55" width="225" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="14" cy="69" r="5" fill="#38bdf8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="28" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8" letter-spacing="1.2">CURATED CLOUD ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="145" class="title-text">
+      Awesome Cloud Integration
+    </text>
+    <text x="0" y="195" class="title-text" fill="url(#cyanBlue)">
+      &amp; Connectors ⚡
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="238" class="subtitle-text">
+      The authoritative index of enterprise iPaaS platforms, SaaS sync tools,
+    </text>
+    <text x="0" y="264" class="subtitle-text">
+      and open-source ELT movement engines (AWS, Salesforce, Azure, GCP).
+    </text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 290)">
+      <rect x="0" y="0" width="105" height="24" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8" />
+      <text x="52" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">☁️ Multi-Cloud</text>
+
+      <rect x="115" y="0" width="115" height="24" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8" />
+      <text x="172" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">💼 Enterprise SaaS</text>
+
+      <rect x="240" y="0" width="115" height="24" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8" />
+      <text x="297" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">🚀 Open-Source</text>
+    </g>
+  </g>
+</svg>
